@@ -55,23 +55,29 @@ build CMakeFiles/cppProjectCA2.dir/main.cpp.obj: CXX_COMPILER__cppProjectCA2_uns
   OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
   OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir
 
-build CMakeFiles/cppProjectCA2.dir/Bug.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/Bug.cpp || cmake_object_order_depends_target_cppProjectCA2
-  DEP_FILE = CMakeFiles\cppProjectCA2.dir\Bug.cpp.obj.d
+build CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/source/Bug.cpp || cmake_object_order_depends_target_cppProjectCA2
+  DEP_FILE = CMakeFiles\cppProjectCA2.dir\source\Bug.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
-  OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir
+  OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir\source
 
-build CMakeFiles/cppProjectCA2.dir/Crawler.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/Crawler.cpp || cmake_object_order_depends_target_cppProjectCA2
-  DEP_FILE = CMakeFiles\cppProjectCA2.dir\Crawler.cpp.obj.d
+build CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/source/Crawler.cpp || cmake_object_order_depends_target_cppProjectCA2
+  DEP_FILE = CMakeFiles\cppProjectCA2.dir\source\Crawler.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
-  OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir
+  OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir\source
 
-build CMakeFiles/cppProjectCA2.dir/Hopper.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/Hopper.cpp || cmake_object_order_depends_target_cppProjectCA2
-  DEP_FILE = CMakeFiles\cppProjectCA2.dir\Hopper.cpp.obj.d
+build CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/source/Hopper.cpp || cmake_object_order_depends_target_cppProjectCA2
+  DEP_FILE = CMakeFiles\cppProjectCA2.dir\source\Hopper.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
-  OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir
+  OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir\source
+
+build CMakeFiles/cppProjectCA2.dir/headers/Board.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/headers/Board.cpp || cmake_object_order_depends_target_cppProjectCA2
+  DEP_FILE = CMakeFiles\cppProjectCA2.dir\headers\Board.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
+  OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir\headers
 
 
 # =============================================================================
@@ -81,7 +87,7 @@ build CMakeFiles/cppProjectCA2.dir/Hopper.cpp.obj: CXX_COMPILER__cppProjectCA2_u
 #############################################
 # Link the executable cppProjectCA2.exe
 
-build cppProjectCA2.exe: CXX_EXECUTABLE_LINKER__cppProjectCA2_Debug CMakeFiles/cppProjectCA2.dir/main.cpp.obj CMakeFiles/cppProjectCA2.dir/Bug.cpp.obj CMakeFiles/cppProjectCA2.dir/Crawler.cpp.obj CMakeFiles/cppProjectCA2.dir/Hopper.cpp.obj
+build cppProjectCA2.exe: CXX_EXECUTABLE_LINKER__cppProjectCA2_Debug CMakeFiles/cppProjectCA2.dir/main.cpp.obj CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj CMakeFiles/cppProjectCA2.dir/headers/Board.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\cppProjectCA2.dir

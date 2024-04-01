@@ -1,6 +1,13 @@
 #include <iostream>
+#include "headers/Bug.h"
+#include "headers/Crawler.h"
+#include "headers/Hopper.h"
+#include <vector>
 
+using namespace std;
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    vector<Bug*> bug_vector;
+
+
     return 0;
 }

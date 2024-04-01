@@ -9,4 +9,6 @@ add_executable(cppProjectCA2 main.cpp
         source/Crawler.cpp
         headers/Crawler.h
         source/Hopper.cpp
-        headers/Hopper.h)
+        headers/Hopper.h
+        source/Board.cpp
+        headers/Board.h)
