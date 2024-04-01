@@ -36,4 +36,7 @@ void Crawler::move() {
     } else if (this->direction == WEST) {
         this->position.setX(this->position.getX()-1);
     }
+
+    this->path.push_back(this->position);
+
 }
