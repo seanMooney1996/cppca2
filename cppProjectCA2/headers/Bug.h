@@ -11,6 +11,10 @@ struct Pair {
 
     int getY() const;
 
+    void setX(int x);
+
+    void setY(int y);
+
     int x;
     int y;
 };
@@ -50,6 +54,8 @@ public:
     bool isAlive() const;
 
     const list<Pair> &getPath() const;
+
+    void setPosition(const Pair &position);
 };
 
 

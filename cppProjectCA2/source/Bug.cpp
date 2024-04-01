@@ -29,9 +29,12 @@ int Bug::getSize() const {
 bool Bug::isAlive() const {
     return alive;
 }
-
 const list<Pair> &Bug::getPath() const {
     return path;
+}
+
+void Bug::setPosition(const Pair &position) {
+    Bug::position = position;
 }
 
 bool Bug::isWayBlocked() {
