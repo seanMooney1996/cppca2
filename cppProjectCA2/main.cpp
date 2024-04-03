@@ -9,20 +9,53 @@
 using namespace std;
 void readBugsFromFile(vector<Bug*> &bug_vector,const string& file_name);
 void displayAllBugs(const vector<Bug*> &bug_vector,int size);
+void findBugById(const vector<Bug*> &bugVec,int size);
+
 int main() {
     vector<Bug*> bug_vector;
     readBugsFromFile(bug_vector,"bugs.txt");
 
     displayAllBugs(bug_vector,bug_vector.size());
+    int input = 0;
+    while (input!=-1){
+        cout<<"Enter -1 to exit"<< endl;
+        cout<<"Enter 1 to find bug"<< endl;
+        cin>> input;
+
+        switch(input){
+            case(1) : findBugById(bug_vector,bug_vector.size());
+            break;
+            default : cout<<" Enter a valid number "<< endl;
+        }
+    }
     return 0;
 }
 
+void findBugById(const vector<Bug*> &bugVec,int size){
+    cout<< "Enter id of bug you would like to find"<<endl;
+    int input;
+    cin>>input;
+    bool foundBug = false;
+
+    auto it = bugVec.begin();
+    for (int i=0;i<size;i++){
+        Bug * b = *it;
+        if (b->getId()==input){
+            cout<< "Found bug "<< input << endl;
+            b->displayBug();
+            return;
+        }
+        it++;
+    }
+
+    cout<<"Did not find bug "<<input << endl;
+}
 void displayAllBugs(const vector<Bug*> &bug_vector,int size){
     cout<<"**** DISPLAYING ALL BUGS ****"<<endl;
     for (int i=0;i<size;i++){
         bug_vector.at(i)->displayBug();
     }
-    cout<<"*********************";
+    cout<<"*********************"<<endl;
 }
 
 
@@ -57,11 +90,11 @@ void readBugsFromFile(vector<Bug*> &bug_vector,const string& file_name){
             d=Direction::West;
         }
         if (tokens.at(0)=="C"){
-            Crawler *c = new Crawler(id,x,y,d,size);
+            auto *c = new Crawler(id,x,y,d,size);
             bug_vector.push_back(c);
         } else {
             int hopLength = stoi(tokens.at(6));
-            Hopper *h = new Hopper(id,x,y,d,size,hopLength);
+            auto *h = new Hopper(id,x,y,d,size,hopLength);
             bug_vector.push_back(h);
         }
     }
