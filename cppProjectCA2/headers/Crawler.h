@@ -9,7 +9,10 @@
 #include "Bug.h"
 
 class Crawler : public Bug {
-void move() override;
+public:
+    void displayBug() override;
+    void move() override;
+    Crawler(int id, int x, int y, Direction d, int size);
 };
 
 

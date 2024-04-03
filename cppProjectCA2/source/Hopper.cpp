@@ -4,10 +4,22 @@
 
 #include "../headers/Hopper.h"
 #include <random>
+#include <iostream>
 
-std::random_device rd;
-std::mt19937 gen(rd());
+using namespace std;
+inline std::random_device rd;
+inline std::mt19937 gen(rd());
 
+
+Hopper::Hopper(int id,int x,int y,Direction d,int size, int hop_length){
+    this->id = id;
+    Pair p(x,y);
+    this->position = p;
+    this->direction = d;
+    this->size = size;
+    this->hopLength=hop_length;
+    this->status = "Alive";
+}
 void Hopper::move() {
     while (this->isWayBlocked()) {
         int min = 1;
@@ -16,32 +28,32 @@ void Hopper::move() {
         int randomInt = dist(gen);
 
         if (randomInt == 1) {
-            this->direction = NORTH;
+            this->direction =  Direction::North;
         } else if (randomInt == 2) {
-            this->direction = SOUTH;
+            this->direction =  Direction::South;
         } else if (randomInt == 3) {
-            this->direction = EAST;
+            this->direction =  Direction::East;
         } else if (randomInt == 4) {
-            this->direction = WEST;
+            this->direction =  Direction::West;
         }
     }
 
-    if (this->direction == NORTH) {
+    if (this->direction ==  Direction::North) {
         this->position.setY(this->position.getY()-this->hopLength);
         if (this->getPosition().getY()<0){
             this->position.setY(0);
         }
-    } else if (this->direction == SOUTH) {
+    } else if (this->direction ==  Direction::South) {
         this->position.setY(this->position.getY()+this->hopLength);
         if (this->getPosition().getY()>9){
             this->position.setY(9);
         }
-    } else if (this->direction == EAST) {
+    } else if (this->direction ==  Direction::East) {
         this->position.setX(this->position.getX()+this->hopLength);
         if (this->getPosition().getX()>9){
             this->position.setX(9);
         }
-    } else if (this->direction == WEST) {
+    } else if (this->direction ==  Direction::West) {
         this->position.setY(this->position.getX()-this->hopLength);
         if (this->getPosition().getX()<0){
             this->position.setX(0);
@@ -49,4 +61,9 @@ void Hopper::move() {
     }
 
     this->path.push_back(position);
+}
+
+void Hopper::displayBug() {
+        cout << id << " HOPPER (" << position.getX() << "," << position.getY() << ") " << size << " "<<directionToString(
+                direction) << " " << hopLength << " " << status << endl;
 }

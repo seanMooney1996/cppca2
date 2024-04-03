@@ -1,5 +1,5 @@
 #include "../headers/Bug.h"
-
+#include "../headers/Direction.h"
 
 int Pair::getX() const {
     return x;
@@ -8,8 +8,6 @@ int Pair::getX() const {
 int Pair::getY() const {
     return y;
 }
-
-
 int Bug::getId() const {
     return id;
 }
@@ -33,27 +31,27 @@ const list<Pair> &Bug::getPath() const {
     return path;
 }
 
-void Bug::setPosition(const Pair &position) {
-    Bug::position = position;
+void Bug::setPosition(const Pair &pos) {
+    Bug::position = pos;
 }
 
 bool Bug::isWayBlocked() {
-    if (this->direction == NORTH){
+    if (this->direction ==  Direction::North){
         if (this->getPosition().getY()-1 == -1){
             return true;
         }
     }
-    if (this->direction == SOUTH){
+    if (this->direction ==  Direction::South){
         if (this->getPosition().getY()+1 == 10){
             return true;
         }
     }
-    if (this->direction == EAST){
+    if (this->direction ==  Direction::East){
         if (this->getPosition().getX()+1 == 10){
             return true;
         }
     }
-    if (this->direction == WEST){
+    if (this->direction ==  Direction::West){
         if (this->getPosition().getX()-1 == -1){
             return true;
         }

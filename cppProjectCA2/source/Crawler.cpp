@@ -4,11 +4,18 @@
 
 #include "../headers/Crawler.h"
 #include <random>
-
-std::random_device rd;
-std::mt19937 gen(rd());
-
-
+#include <iostream>
+using namespace std;
+inline std::random_device rd;
+inline std::mt19937 gen(rd());
+Crawler::Crawler(int id,int x,int y,Direction d,int size){
+    this->id = id;
+    Pair p(x,y);
+    this->position = p;
+    this->direction = d;
+    this->size = size;
+    this->status = "Alive";
+}
 void Crawler::move() {
     while (this->isWayBlocked()) {
         int min = 1;
@@ -17,26 +24,29 @@ void Crawler::move() {
         int randomInt = dist(gen);
 
         if (randomInt == 1) {
-            this->direction = NORTH;
+            this->direction =  Direction::North;
         } else if (randomInt == 2) {
-            this->direction = SOUTH;
+            this->direction = Direction::South;
         } else if (randomInt == 3) {
-            this->direction = EAST;
+            this->direction = Direction::East;
         } else if (randomInt == 4) {
-            this->direction = WEST;
+            this->direction = Direction::West;
         }
     }
 
-    if (this->direction == NORTH) {
+    if (this->direction ==  Direction::North) {
         this->position.setY(this->position.getY()-1);
-    } else if (this->direction == SOUTH) {
+    } else if (this->direction == Direction::South) {
         this->position.setY(this->position.getY()+1);
-    } else if (this->direction == EAST) {
+    } else if (this->direction == Direction::East) {
         this->position.setX(this->position.getX()+1);
-    } else if (this->direction == WEST) {
+    } else if (this->direction == Direction::West) {
         this->position.setX(this->position.getX()-1);
     }
-
     this->path.push_back(this->position);
+}
 
+void Crawler::displayBug() {
+    cout << id << " CRAWLER (" << position.getX() << "," << position.getY() << ") " << size <<" "<< directionToString(
+            direction) << " "<< status << endl;
 }

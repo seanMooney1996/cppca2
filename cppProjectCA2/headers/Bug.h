@@ -5,25 +5,28 @@
 #ifndef CPPPROJECTCA2_BUG_H
 #define CPPPROJECTCA2_BUG_H
 #include <list>
+#include "Direction.h"
 
 struct Pair {
     int getX() const;
 
     int getY() const;
 
-    void setX(int x);
+    void setX(int x){
+        x = x;
+    }
 
-    void setY(int y);
+    void setY(int y){
+        y=y;
+    }
 
     int x;
     int y;
-};
 
-enum class Direction {
-    North,
-    South,
-    East,
-    West
+    Pair(int newx,int newy){
+        x = newx;
+        y = newy;
+    }
 };
 
 using namespace std;
@@ -33,13 +36,15 @@ class Bug {
 
 protected:
     int id;
-    Pair position;
+    Pair position = Pair(0,0);
     Direction direction;
     int size;
     bool alive;
     list<Pair> path;
+    string status;
 
 public:
+    virtual void displayBug() =0;
     virtual void move() =0;
     bool isWayBlocked();
 
@@ -57,6 +62,5 @@ public:
 
     void setPosition(const Pair &position);
 };
-
 
 #endif //CPPPROJECTCA2_BUG_H

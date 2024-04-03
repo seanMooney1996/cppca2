@@ -10,7 +10,9 @@
 
 class Hopper : public Bug {
 public:
+    Hopper(int id,int x,int y,Direction d,int size, int hop_length);
     void move() override;
+    void displayBug() override;
 
 private:
     int hopLength;
