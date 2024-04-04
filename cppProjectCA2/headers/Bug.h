@@ -12,12 +12,12 @@ struct Pair {
 
     int getY() const;
 
-    void setX(int x){
-        x = x;
+    void setX(int xNew){
+        x = xNew;
     }
 
-    void setY(int y){
-        y=y;
+    void setY(int yNew){
+        y=yNew;
     }
 
     int x;

@@ -17,6 +17,11 @@ void Board::tapBugBoard() {
 }
 
 void Board::getBugPositions() {
+    for (int i=0;i<10;i++){
+        for (int j=0;j<10;j++){
+            boardVector[i][j] = nullptr;
+        }
+    }
     auto iter = bugsVector.begin();
     for (int i=0;i<bugsVector.size();i++){
         Pair bugPos = (*iter)->getPosition();
@@ -27,7 +32,9 @@ void Board::getBugPositions() {
 }
 void Board::moveAllBugs() {
     for (int i=0;i<bugsVector.size();i++){
+        bugsVector[i]->displayBug();
         bugsVector[i]->move();
+        bugsVector[i]->displayBug();
     }
 }
 void Board::printBoard() {

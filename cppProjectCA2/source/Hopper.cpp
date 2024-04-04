@@ -7,8 +7,6 @@
 #include <iostream>
 
 using namespace std;
-inline std::random_device rd;
-inline std::mt19937 gen(rd());
 
 
 Hopper::Hopper(int id,int x,int y,Direction d,int size, int hop_length){
@@ -22,6 +20,8 @@ Hopper::Hopper(int id,int x,int y,Direction d,int size, int hop_length){
 }
 void Hopper::move() {
     while (this->isWayBlocked()) {
+         std::random_device rd;
+         std::mt19937 gen(rd());
         int min = 1;
         int max = 4;
         std::uniform_int_distribution<> dist(min, max);

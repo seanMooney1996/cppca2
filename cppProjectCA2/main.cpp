@@ -21,11 +21,14 @@ int main() {
     while (input!=-1){
         cout<<"Enter -1 to exit"<< endl;
         cout<<"Enter 1 to find bug"<< endl;
+        cout<<"Enter 2 to tap board"<< endl;
         cin>> input;
 
         switch(input){
             case(1) : findBugById(bug_vector,bug_vector.size());
             break;
+            case(2) : board.tapBugBoard();
+                break;
             default : cout<<" Enter a valid number "<< endl;
         }
     }

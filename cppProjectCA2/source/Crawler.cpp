@@ -6,8 +6,6 @@
 #include <random>
 #include <iostream>
 using namespace std;
-inline std::random_device rd;
-inline std::mt19937 gen(rd());
 Crawler::Crawler(int id,int x,int y,Direction d,int size){
     this->id = id;
     Pair p(x,y);
@@ -18,6 +16,8 @@ Crawler::Crawler(int id,int x,int y,Direction d,int size){
 }
 void Crawler::move() {
     while (this->isWayBlocked()) {
+         std::random_device rd;
+         std::mt19937 gen(rd());
         int min = 1;
         int max = 4;
         std::uniform_int_distribution<> dist(min, max);
@@ -35,13 +35,17 @@ void Crawler::move() {
     }
 
     if (this->direction ==  Direction::North) {
-        this->position.setY(this->position.getY()-1);
+        this->position.setY((this->position.getY())-1);
+        cout<<getPosition().getX() << " "<< getPosition().getY() << endl;
     } else if (this->direction == Direction::South) {
-        this->position.setY(this->position.getY()+1);
+        this->position.setY((this->position.getY())+1);
+        cout<<getPosition().getX() << " "<< getPosition().getY() << endl;
     } else if (this->direction == Direction::East) {
-        this->position.setX(this->position.getX()+1);
+        this->position.setX((this->position.getX())+1);
+        cout<<getPosition().getX() << " "<< getPosition().getY() << endl;
     } else if (this->direction == Direction::West) {
-        this->position.setX(this->position.getX()-1);
+        this->position.setX((this->position.getX())-1);
+        cout<<getPosition().getX() << " "<< getPosition().getY() << endl;
     }
     this->path.push_back(this->position);
 }
