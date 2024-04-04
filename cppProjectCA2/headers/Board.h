@@ -23,9 +23,14 @@ private:
             {nullptr,nullptr,nullptr,nullptr,nullptr,nullptr,nullptr,nullptr,nullptr,nullptr}
     };
 
+    vector<Bug*> bugsVector;
+
 public:
-    Board(const vector<Bug*> &bugs,int listSize);
+    Board(const vector<Bug*> &bugs);
     void printBoard();
+    void moveAllBugs();
+    void tapBugBoard();
+    void getBugPositions();
 };
 
 

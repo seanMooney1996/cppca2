@@ -6,15 +6,30 @@
 #include <iostream>
 
 using namespace std;
-Board::Board(const vector<Bug*> &bugs, int vecSize) {
-    auto iter = bugs.begin();
-    for (int i=0;i<vecSize;i++){
+Board::Board(const vector<Bug*> &bugs) {
+    bugsVector=bugs;
+    getBugPositions();
+}
+
+void Board::tapBugBoard() {
+    moveAllBugs();
+    getBugPositions();
+}
+
+void Board::getBugPositions() {
+    auto iter = bugsVector.begin();
+    for (int i=0;i<bugsVector.size();i++){
         Pair bugPos = (*iter)->getPosition();
         boardVector[bugPos.getX()][bugPos.getY()] = *iter;
         iter++;
     }
+    printBoard();
 }
-
+void Board::moveAllBugs() {
+    for (int i=0;i<bugsVector.size();i++){
+        bugsVector[i]->move();
+    }
+}
 void Board::printBoard() {
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {
@@ -32,3 +47,5 @@ void Board::printBoard() {
         }
     }
 }
+
+

@@ -16,8 +16,7 @@ int main() {
     vector<Bug*> bug_vector;
     readBugsFromFile(bug_vector,"bugs.txt");
     displayAllBugs(bug_vector,bug_vector.size());
-    Board board(bug_vector,bug_vector.size());
-    board.printBoard();
+    Board board(bug_vector);
     int input = 0;
     while (input!=-1){
         cout<<"Enter -1 to exit"<< endl;
