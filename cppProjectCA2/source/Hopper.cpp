@@ -16,7 +16,7 @@ Hopper::Hopper(int id,int x,int y,Direction d,int size, int hop_length){
     this->direction = d;
     this->size = size;
     this->hopLength=hop_length;
-    this->status = "Alive";
+    this->alive = true;
 }
 void Hopper::move() {
     while (this->isWayBlocked()) {
@@ -39,24 +39,24 @@ void Hopper::move() {
     }
 
     if (this->direction ==  Direction::North) {
-        this->position.setY(this->position.getY()-this->hopLength);
-        if (this->getPosition().getY()<0){
-            this->position.setY(0);
+        this->position.setX(this->position.getX()-this->hopLength);
+        if (this->getPosition().getX()<0){
+            this->position.setX(0);
         }
     } else if (this->direction ==  Direction::South) {
-        this->position.setY(this->position.getY()+this->hopLength);
-        if (this->getPosition().getY()>9){
-            this->position.setY(9);
-        }
-    } else if (this->direction ==  Direction::East) {
         this->position.setX(this->position.getX()+this->hopLength);
         if (this->getPosition().getX()>9){
             this->position.setX(9);
         }
+    } else if (this->direction ==  Direction::East) {
+        this->position.setY(this->position.getY()+this->hopLength);
+        if (this->getPosition().getY()>9){
+            this->position.setY(9);
+        }
     } else if (this->direction ==  Direction::West) {
-        this->position.setY(this->position.getX()-this->hopLength);
-        if (this->getPosition().getX()<0){
-            this->position.setX(0);
+        this->position.setY(this->position.getY()-this->hopLength);
+        if (this->getPosition().getY()<0){
+            this->position.setY(0);
         }
     }
 
@@ -65,5 +65,11 @@ void Hopper::move() {
 
 void Hopper::displayBug() {
         cout << id << " HOPPER (" << position.getX() << "," << position.getY() << ") " << size << " "<<directionToString(
-                direction) << " " << hopLength << " " << status << endl;
+                direction) << " " << hopLength << " ";
+
+        if (alive){
+            cout<< "ALIVE" <<endl;
+        } else {
+            cout<< "DEAD" << endl;
+        }
 }

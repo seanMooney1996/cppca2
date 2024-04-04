@@ -35,24 +35,32 @@ void Bug::setPosition(const Pair &pos) {
     Bug::position = pos;
 }
 
+void Bug::setEatenBy(int eatenBy) {
+    Bug::eatenBy = eatenBy;
+}
+
+int Bug::getEatenBy() const {
+    return eatenBy;
+}
+
 bool Bug::isWayBlocked() {
     if (this->direction ==  Direction::North){
-        if (this->getPosition().getY()-1 == -1){
+        if (this->getPosition().getX()-1 == -1){
             return true;
         }
     }
     if (this->direction ==  Direction::South){
-        if (this->getPosition().getY()+1 == 10){
-            return true;
-        }
-    }
-    if (this->direction ==  Direction::East){
         if (this->getPosition().getX()+1 == 10){
             return true;
         }
     }
+    if (this->direction ==  Direction::East){
+        if (this->getPosition().getY()+1 == 10){
+            return true;
+        }
+    }
     if (this->direction ==  Direction::West){
-        if (this->getPosition().getX()-1 == -1){
+        if (this->getPosition().getY()-1 == -1){
             return true;
         }
     }

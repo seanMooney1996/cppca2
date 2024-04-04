@@ -16,6 +16,23 @@ void Board::tapBugBoard() {
     getBugPositions();
 }
 
+
+void Board::displayLifeHistory() {
+    for (Bug* bug:bugsVector){
+        bug->displayBug();
+         auto iter = bug->getPath().begin();
+         for (iter;iter!=bug->getPath().end();iter++){
+             cout<<"PATH: ("<<iter->getX()<<iter->getY()<<") ";
+         }
+         if (!bug->isAlive()){
+             cout << bug->getEatenBy()<< " ate this bug! "<<endl;
+         } else {
+             cout<< "ALIVE! "<<endl;
+         }
+    }
+}
+
+
 void Board::getBugPositions() {
     for (int i=0;i<10;i++){
         for (int j=0;j<10;j++){

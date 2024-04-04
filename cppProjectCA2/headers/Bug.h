@@ -41,7 +41,7 @@ protected:
     int size;
     bool alive;
     list<Pair> path;
-    string status;
+    int eatenBy = -1;
 
 public:
     virtual void displayBug() =0;
@@ -61,6 +61,10 @@ public:
     const list<Pair> &getPath() const;
 
     void setPosition(const Pair &position);
+
+    void setEatenBy(int eatenBy);
+
+    int getEatenBy() const;
 };
 
 #endif //CPPPROJECTCA2_BUG_H

@@ -12,7 +12,7 @@ Crawler::Crawler(int id,int x,int y,Direction d,int size){
     this->position = p;
     this->direction = d;
     this->size = size;
-    this->status = "Alive";
+    this->alive = true;
 }
 void Crawler::move() {
     while (this->isWayBlocked()) {
@@ -35,22 +35,24 @@ void Crawler::move() {
     }
 
     if (this->direction ==  Direction::North) {
-        this->position.setY((this->position.getY())-1);
-        cout<<getPosition().getX() << " "<< getPosition().getY() << endl;
-    } else if (this->direction == Direction::South) {
-        this->position.setY((this->position.getY())+1);
-        cout<<getPosition().getX() << " "<< getPosition().getY() << endl;
-    } else if (this->direction == Direction::East) {
-        this->position.setX((this->position.getX())+1);
-        cout<<getPosition().getX() << " "<< getPosition().getY() << endl;
-    } else if (this->direction == Direction::West) {
         this->position.setX((this->position.getX())-1);
-        cout<<getPosition().getX() << " "<< getPosition().getY() << endl;
+    } else if (this->direction == Direction::South) {
+        this->position.setX((this->position.getX())+1);
+    } else if (this->direction == Direction::East) {
+        this->position.setY((this->position.getY())+1);
+    } else if (this->direction == Direction::West) {
+        this->position.setY((this->position.getY())-1);
     }
     this->path.push_back(this->position);
 }
 
 void Crawler::displayBug() {
     cout << id << " CRAWLER (" << position.getX() << "," << position.getY() << ") " << size <<" "<< directionToString(
-            direction) << " "<< status << endl;
+            direction);
+
+    if (alive){
+        cout<< "ALIVE" <<endl;
+    } else {
+        cout<< "DEAD" << endl;
+    }
 }

@@ -22,12 +22,15 @@ int main() {
         cout<<"Enter -1 to exit"<< endl;
         cout<<"Enter 1 to find bug"<< endl;
         cout<<"Enter 2 to tap board"<< endl;
+        cout<<"Enter 3 to display all bug history"<< endl;
         cin>> input;
 
         switch(input){
             case(1) : findBugById(bug_vector,bug_vector.size());
             break;
             case(2) : board.tapBugBoard();
+                break;
+            case(3) : board.displayLifeHistory();
                 break;
             default : cout<<" Enter a valid number "<< endl;
         }

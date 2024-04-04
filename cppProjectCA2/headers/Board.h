@@ -31,6 +31,7 @@ public:
     void moveAllBugs();
     void tapBugBoard();
     void getBugPositions();
+    void displayLifeHistory();
 };
 
 
