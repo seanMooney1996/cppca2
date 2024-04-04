@@ -2,6 +2,7 @@
 #include "headers/Bug.h"
 #include "headers/Crawler.h"
 #include "headers/Hopper.h"
+#include "headers/Board.h"
 #include <vector>
 #include <fstream>
 #include <sstream>
@@ -14,8 +15,9 @@ void findBugById(const vector<Bug*> &bugVec,int size);
 int main() {
     vector<Bug*> bug_vector;
     readBugsFromFile(bug_vector,"bugs.txt");
-
     displayAllBugs(bug_vector,bug_vector.size());
+    Board board(bug_vector,bug_vector.size());
+    board.printBoard();
     int input = 0;
     while (input!=-1){
         cout<<"Enter -1 to exit"<< endl;
