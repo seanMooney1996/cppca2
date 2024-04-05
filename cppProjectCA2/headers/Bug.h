@@ -46,6 +46,7 @@ protected:
 public:
     virtual void displayBug() =0;
     virtual void move() =0;
+    virtual string getBugDetails() =0;
     bool isWayBlocked();
 
     int getId() const;

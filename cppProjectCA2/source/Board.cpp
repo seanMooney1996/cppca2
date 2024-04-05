@@ -4,6 +4,7 @@
 
 #include "../headers/Board.h"
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 Board::Board(const vector<Bug*> &bugs) {
@@ -20,18 +21,33 @@ void Board::tapBugBoard() {
 void Board::displayLifeHistory() {
     for (Bug* bug:bugsVector){
         bug->displayBug();
-         auto iter = bug->getPath().begin();
-         for (iter;iter!=bug->getPath().end();iter++){
-             cout<<"PATH: ("<<iter->getX()<<iter->getY()<<") ";
-         }
-         if (!bug->isAlive()){
-             cout << bug->getEatenBy()<< " ate this bug! "<<endl;
-         } else {
-             cout<< "ALIVE! "<<endl;
-         }
+        cout << getBugLifeHistory(bug) << endl;
     }
 }
 
+
+//https://www.tutorialspoint.com/cplusplus/cpp_date_time.htm for time code
+void Board::writeHistoryToFile() {
+    time_t now = time(0);
+    tm *ltm = localtime(&now);
+
+    string year = to_string(1900 + ltm->tm_year);
+    string month =  to_string(1 + ltm->tm_mon);
+    string day = to_string(ltm->tm_mday);
+    string hour = to_string(5+ltm->tm_hour);
+    string minutes = to_string(30+ltm->tm_min);
+    string seconds = to_string(30+ltm->tm_min);
+
+    string filename = "bugs_life_history_"+day+"-"+month+"-"+year+"_"+hour+"-"+minutes+"-"+seconds+".txt";
+    ofstream output(filename);
+    cout<< filename<< endl;
+    for (Bug* bug: bugsVector){
+        output << bug->getBugDetails();
+        output << getBugLifeHistory(bug)<<"\n";
+    }
+
+    output.close();
+}
 
 void Board::getBugPositions() {
     for (int i=0;i<10;i++){
@@ -71,5 +87,20 @@ void Board::printBoard() {
         }
     }
 }
+
+string Board::getBugLifeHistory(Bug *bug) {
+    string bugLifeHistory = "PATH: ";
+    for (auto iter : bug->getPath()){
+        bugLifeHistory +=" (" + to_string(iter.getX()) +","+ to_string(iter.getY())+") ";
+    }
+
+    if (!bug->isAlive()){
+        bugLifeHistory += to_string(bug->getEatenBy())+ " ate this bug!";
+    } else {
+        bugLifeHistory+= "ALIVE! ";
+    }
+    return bugLifeHistory;
+}
+
 
 

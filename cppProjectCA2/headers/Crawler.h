@@ -10,6 +10,7 @@
 
 class Crawler : public Bug {
 public:
+    string getBugDetails() override;
     void displayBug() override;
     void move() override;
     Crawler(int id, int x, int y, Direction d, int size);

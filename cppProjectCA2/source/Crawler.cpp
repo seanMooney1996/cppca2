@@ -46,13 +46,20 @@ void Crawler::move() {
     this->path.push_back(this->position);
 }
 
-void Crawler::displayBug() {
-    cout << id << " CRAWLER (" << position.getX() << "," << position.getY() << ") " << size <<" "<< directionToString(
+string Crawler::getBugDetails() {
+    string bugDetails;
+    bugDetails = to_string(id) + " CRAWLER (" + to_string(position.getX()) + "," + to_string(position.getY()) +
+            ") " + to_string(size) +" "+ directionToString(
             direction);
-
     if (alive){
-        cout<< "ALIVE" <<endl;
+        bugDetails += " ALIVE ";
     } else {
-        cout<< "DEAD" << endl;
+        bugDetails += " DEAD ";
     }
+
+    return bugDetails;
+}
+
+void Crawler::displayBug() {
+    cout<<getBugDetails()<<endl;
 }

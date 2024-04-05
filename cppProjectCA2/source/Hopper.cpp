@@ -64,12 +64,19 @@ void Hopper::move() {
 }
 
 void Hopper::displayBug() {
-        cout << id << " HOPPER (" << position.getX() << "," << position.getY() << ") " << size << " "<<directionToString(
-                direction) << " " << hopLength << " ";
+    cout<<getBugDetails()<<endl;
+}
 
-        if (alive){
-            cout<< "ALIVE" <<endl;
-        } else {
-            cout<< "DEAD" << endl;
-        }
+string Hopper::getBugDetails() {
+    string bugDetails;
+    bugDetails = to_string(id) + " CRAWLER (" + to_string(position.getX()) + "," + to_string(position.getY()) +
+                 ") " + to_string(size) +" "+ directionToString(
+            direction) + " " + to_string(hopLength);
+    if (alive){
+        bugDetails += " ALIVE ";
+    } else {
+        bugDetails += " DEAD ";
+    }
+
+    return bugDetails;
 }

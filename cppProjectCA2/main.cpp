@@ -26,6 +26,9 @@ int main() {
         cin>> input;
 
         switch(input){
+            case(-1):board.writeHistoryToFile();
+                cout<< "Exiting" << endl;
+                break;
             case(1) : findBugById(bug_vector,bug_vector.size());
             break;
             case(2) : board.tapBugBoard();

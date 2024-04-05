@@ -32,6 +32,8 @@ public:
     void tapBugBoard();
     void getBugPositions();
     void displayLifeHistory();
+    void writeHistoryToFile();
+    static string getBugLifeHistory(Bug* bug);
 };
 
 

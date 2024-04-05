@@ -11,6 +11,7 @@
 class Hopper : public Bug {
 public:
     Hopper(int id,int x,int y,Direction d,int size, int hop_length);
+    string getBugDetails() override;
     void move() override;
     void displayBug() override;
 
