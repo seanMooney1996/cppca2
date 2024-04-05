@@ -47,9 +47,19 @@ public:
     virtual void displayBug() =0;
     virtual void move() =0;
     virtual string getBugDetails() =0;
+
+    // virtual destructor ( to allow for deleting of bug from heap without a dynamic cast )
+    virtual ~Bug() = default;
+
+    
+    void eatBug(Bug *bug);
     bool isWayBlocked();
 
+    void setSize(int size);
+
     int getId() const;
+
+    void setAlive(bool alive);
 
     const Pair &getPosition() const;
 

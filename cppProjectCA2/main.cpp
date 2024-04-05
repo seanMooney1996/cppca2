@@ -3,23 +3,24 @@
 #include "headers/Crawler.h"
 #include "headers/Hopper.h"
 #include "headers/Board.h"
+#include "headers/Splitter.h"
 #include <vector>
 #include <fstream>
 #include <sstream>
 
 using namespace std;
 
-void readBugsFromFile(vector<Bug *> &bug_vector, const string &file_name);
-
-void displayAllBugs(const vector<Bug *> &bug_vector, int size);
+void readBugsFromFile(vector<Bug *> &bug_vector, const string &file_name, Board *board);
 
 void findBugById(const vector<Bug *> &bugVec, int size);
 
 int main() {
     vector<Bug *> bug_vector;
-    readBugsFromFile(bug_vector, "bugs.txt");
-    displayAllBugs(bug_vector, bug_vector.size());
-    Board board(bug_vector);
+    auto *board = new Board();
+    readBugsFromFile(bug_vector, "bugs.txt",board);
+    board->initializeBoard(bug_vector);
+
+    board->displayAllBugs();
     int input = 0;
     while (input != -1) {
         cout << "Enter -1 to exit" << endl;
@@ -27,29 +28,43 @@ int main() {
         cout << "Enter 2 to tap board" << endl;
         cout << "Enter 3 to display all bug history" << endl;
         cout << "Enter 4 to display all cells" << endl;
+        cout << "Enter 5 run simulation" << endl;
         cin >> input;
 
         switch (input) {
             case (-1):
-                board.writeHistoryToFile();
                 cout << "Exiting" << endl;
                 break;
             case (1) :
                 findBugById(bug_vector, bug_vector.size());
                 break;
             case (2) :
-                board.tapBugBoard();
+                board->tapBugBoard();
                 break;
             case (3) :
-                board.displayLifeHistory();
+                board->displayLifeHistory();
                 break;
             case (4) :
-                board.displayAllCells();
+                board->displayAllCells();
+                break;
+            case (5) :
+                board->runSimulation();
+                board->writeHistoryToFile();
+                input = -1;
+                break;
+            case (6) :
+                board->displayAllBugs();
                 break;
             default :
                 cout << " Enter a valid number " << endl;
         }
     }
+
+    // using virtual destructor for deleting bug based on subclass.
+    for(Bug *bug :bug_vector){
+        delete bug;
+    }
+     delete board;
     return 0;
 }
 
@@ -73,16 +88,9 @@ void findBugById(const vector<Bug *> &bugVec, int size) {
     cout << "Did not find bug " << input << endl;
 }
 
-void displayAllBugs(const vector<Bug *> &bug_vector, int size) {
-    cout << "**** DISPLAYING ALL BUGS ****" << endl;
-    for (int i = 0; i < size; i++) {
-        bug_vector.at(i)->displayBug();
-    }
-    cout << "*********************" << endl;
-}
 
 
-void readBugsFromFile(vector<Bug *> &bug_vector, const string &file_name) {
+void readBugsFromFile(vector<Bug *> &bug_vector, const string &file_name,Board *board) {
     std::ifstream inputFile(file_name);
 
     while (!inputFile.eof()) {
@@ -115,7 +123,12 @@ void readBugsFromFile(vector<Bug *> &bug_vector, const string &file_name) {
         if (tokens.at(0) == "C") {
             auto *c = new Crawler(id, x, y, d, size);
             bug_vector.push_back(c);
-        } else {
+        }
+        else if (tokens.at(0) == "S") {
+            int splitFreq = stoi(tokens.at(6));
+            auto *s = new Splitter(id, x, y, d, size, splitFreq, board);
+            bug_vector.push_back(s);
+        }else {
             int hopLength = stoi(tokens.at(6));
             auto *h = new Hopper(id, x, y, d, size, hopLength);
             bug_vector.push_back(h);

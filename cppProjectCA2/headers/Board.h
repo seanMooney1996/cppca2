@@ -27,6 +27,8 @@ private:
 
 public:
     Board(const vector<Bug*> &bugs);
+    Board();
+    void initializeBoard(vector<Bug*> &bugsVec);
     void printBoard();
     void moveAllBugs();
     void tapBugBoard();
@@ -35,6 +37,9 @@ public:
     void writeHistoryToFile();
     static string getBugLifeHistory(Bug* bug);
     void displayAllCells();
+    void runSimulation();
+    void displayAllBugs();
+    void addNewBugToBoard(Bug *bug);
 };
 
 

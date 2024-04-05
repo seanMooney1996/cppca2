@@ -1,3 +1,4 @@
+#include <iostream>
 #include "../headers/Bug.h"
 #include "../headers/Direction.h"
 
@@ -11,7 +12,6 @@ int Pair::getY() const {
 int Bug::getId() const {
     return id;
 }
-
 const Pair &Bug::getPosition() const {
     return position;
 }
@@ -42,7 +42,6 @@ void Bug::setEatenBy(int eatenBy) {
 int Bug::getEatenBy() const {
     return eatenBy;
 }
-
 bool Bug::isWayBlocked() {
     if (this->direction ==  Direction::North){
         if (this->getPosition().getX()-1 == -1){
@@ -65,4 +64,20 @@ bool Bug::isWayBlocked() {
         }
     }
     return false;
+}
+
+void Bug::eatBug(Bug* bug) {
+    bug->setEatenBy(this->id);
+    bug->setAlive(false);
+    setSize(getSize()+bug->getSize());
+
+    cout<<"BUG "<<getId()<<" has eaten "<<bug->getId()<<" !!! "<<endl;
+}
+
+void Bug::setAlive(bool alive) {
+    Bug::alive = alive;
+}
+
+void Bug::setSize(int size) {
+    Bug::size = size;
 };

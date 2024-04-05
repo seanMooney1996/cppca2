@@ -13,4 +13,6 @@ add_executable(cppProjectCA2 main.cpp
         headers/Board.h
         source/Board.cpp
         headers/Direction.h
+        source/Splitter.cpp
+        headers/Splitter.h
 )
