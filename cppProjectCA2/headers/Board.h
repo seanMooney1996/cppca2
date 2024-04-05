@@ -34,6 +34,7 @@ public:
     void displayLifeHistory();
     void writeHistoryToFile();
     static string getBugLifeHistory(Bug* bug);
+    void displayAllCells();
 };
 
 

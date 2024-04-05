@@ -88,6 +88,19 @@ void Board::printBoard() {
     }
 }
 
+void Board::displayAllCells() {
+    for (int i=0;i<10;i++){
+        for (int j=0;j<10;j++){
+            cout << "(" << i << "," <<j<< ") : ";
+            if (boardVector[i][j] == nullptr){
+                cout << "empty"<<endl;
+            } else {
+                cout << boardVector[i][j]->getBugDetails() << endl;
+            }
+        }
+    }
+}
+
 string Board::getBugLifeHistory(Bug *bug) {
     string bugLifeHistory = "PATH: ";
     for (auto iter : bug->getPath()){
@@ -101,6 +114,7 @@ string Board::getBugLifeHistory(Bug *bug) {
     }
     return bugLifeHistory;
 }
+
 
 
 
