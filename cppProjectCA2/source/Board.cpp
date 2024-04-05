@@ -29,14 +29,14 @@ void Board::displayLifeHistory() {
 //https://www.tutorialspoint.com/cplusplus/cpp_date_time.htm for time code
 void Board::writeHistoryToFile() {
     time_t now = time(0);
-    tm *ltm = localtime(&now);
+    tm *gtm = gmtime(&now); // Using gmtime() instead of localtime()
 
-    string year = to_string(1900 + ltm->tm_year);
-    string month =  to_string(1 + ltm->tm_mon);
-    string day = to_string(ltm->tm_mday);
-    string hour = to_string(5+ltm->tm_hour);
-    string minutes = to_string(30+ltm->tm_min);
-    string seconds = to_string(30+ltm->tm_min);
+    string year = to_string(1900 + gtm->tm_year);
+    string month =  to_string(1 + gtm->tm_mon);
+    string day = to_string(gtm->tm_mday);
+    string hour = to_string((gtm->tm_hour)+1);
+    string minutes = to_string(gtm->tm_min);
+    string seconds = to_string(gtm->tm_sec);
 
     string filename = "bugs_life_history_"+day+"-"+month+"-"+year+"_"+hour+"-"+minutes+"-"+seconds+".txt";
     ofstream output(filename);
