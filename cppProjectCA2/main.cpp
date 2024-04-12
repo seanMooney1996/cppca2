@@ -7,6 +7,7 @@
 #include <vector>
 #include <fstream>
 #include <sstream>
+#include <SFML/Window.hpp>
 
 using namespace std;
 
@@ -15,6 +16,21 @@ void readBugsFromFile(vector<Bug *> &bug_vector, const string &file_name, Board 
 void findBugById(const vector<Bug *> &bugVec, int size);
 
 int main() {
+//    sf::Window window(sf::VideoMode(1000, 900), "My window");
+//    window.setSize(sf::Vector2u(1000, 900));
+//    window.setTitle("BUG GAME");
+//    window.setVerticalSyncEnabled(true);
+//    while (window.isOpen())
+//    {
+//        // check all the window's events that were triggered since the last iteration of the loop
+//        sf::Event event;
+//        while (window.pollEvent(event))
+//        {
+//            // "close requested" event: we close the window
+//            if (event.type == sf::Event::Closed)
+//                window.close();
+//        }
+//    }
     vector<Bug *> bug_vector;
     auto *board = new Board();
     readBugsFromFile(bug_vector, "bugs.txt",board);

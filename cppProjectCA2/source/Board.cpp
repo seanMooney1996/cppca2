@@ -45,6 +45,7 @@ void Board::writeHistoryToFile() {
     string minutes = to_string(gtm->tm_min);
     string seconds = to_string(gtm->tm_sec);
 
+    cout<< "writing to file"<<endl;
     string filename =
             "bugs_life_history_" + day + "-" + month + "-" + year + "_" + hour + "-" + minutes + "-" + seconds + ".txt";
     ofstream output(filename);
