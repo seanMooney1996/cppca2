@@ -50,38 +50,66 @@ cmake_ninja_workdir = C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2
 build cmake_object_order_depends_target_cppProjectCA2: phony || CMakeFiles/cppProjectCA2.dir
 
 build CMakeFiles/cppProjectCA2.dir/main.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/main.cpp || cmake_object_order_depends_target_cppProjectCA2
+  DEFINES = -DSFML_STATIC
   DEP_FILE = CMakeFiles\cppProjectCA2.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/SFML/include
   OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
   OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir
 
 build CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/source/Bug.cpp || cmake_object_order_depends_target_cppProjectCA2
+  DEFINES = -DSFML_STATIC
   DEP_FILE = CMakeFiles\cppProjectCA2.dir\source\Bug.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/SFML/include
   OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
   OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir\source
 
 build CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/source/Crawler.cpp || cmake_object_order_depends_target_cppProjectCA2
+  DEFINES = -DSFML_STATIC
   DEP_FILE = CMakeFiles\cppProjectCA2.dir\source\Crawler.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/SFML/include
   OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
   OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir\source
 
 build CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/source/Hopper.cpp || cmake_object_order_depends_target_cppProjectCA2
+  DEFINES = -DSFML_STATIC
   DEP_FILE = CMakeFiles\cppProjectCA2.dir\source\Hopper.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/SFML/include
   OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
   OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir\source
 
 build CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/source/Board.cpp || cmake_object_order_depends_target_cppProjectCA2
+  DEFINES = -DSFML_STATIC
   DEP_FILE = CMakeFiles\cppProjectCA2.dir\source\Board.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/SFML/include
   OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
   OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir\source
 
 build CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/source/Splitter.cpp || cmake_object_order_depends_target_cppProjectCA2
+  DEFINES = -DSFML_STATIC
   DEP_FILE = CMakeFiles\cppProjectCA2.dir\source\Splitter.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/SFML/include
+  OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
+  OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir\source
+
+build CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/source/GUI.cpp || cmake_object_order_depends_target_cppProjectCA2
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\cppProjectCA2.dir\source\GUI.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/SFML/include
+  OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
+  OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir\source
+
+build CMakeFiles/cppProjectCA2.dir/source/PlayerBug.cpp.obj: CXX_COMPILER__cppProjectCA2_unscanned_Debug C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/source/PlayerBug.cpp || cmake_object_order_depends_target_cppProjectCA2
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\cppProjectCA2.dir\source\PlayerBug.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/SFML/include
   OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
   OBJECT_FILE_DIR = CMakeFiles\cppProjectCA2.dir\source
 
@@ -93,9 +121,9 @@ build CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj: CXX_COMPILER__cppPro
 #############################################
 # Link the executable cppProjectCA2.exe
 
-build cppProjectCA2.exe: CXX_EXECUTABLE_LINKER__cppProjectCA2_Debug CMakeFiles/cppProjectCA2.dir/main.cpp.obj CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj
+build cppProjectCA2.exe: CXX_EXECUTABLE_LINKER__cppProjectCA2_Debug CMakeFiles/cppProjectCA2.dir/main.cpp.obj CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj CMakeFiles/cppProjectCA2.dir/source/PlayerBug.cpp.obj | C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libsfml-graphics-s-d.a C$:/SFML/lib/libsfml-audio-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libfreetype.a C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libopenal32.a C$:/SFML/lib/libvorbisfile.a C$:/SFML/lib/libvorbisenc.a C$:/SFML/lib/libvorbis.a C$:/SFML/lib/libogg.a C$:/SFML/lib/libFLAC.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/SFML/lib/libsfml-system-s-d.a  C:/SFML/lib/libsfml-window-s-d.a  C:/SFML/lib/libsfml-graphics-s-d.a  C:/SFML/lib/libsfml-audio-s-d.a  C:/SFML/lib/libsfml-window-s-d.a  -lOpenGL32  -lgdi32  C:/SFML/lib/libfreetype.a  C:/SFML/lib/libsfml-system-s-d.a  -lwinmm  C:/SFML/lib/libopenal32.a  C:/SFML/lib/libvorbisfile.a  C:/SFML/lib/libvorbisenc.a  C:/SFML/lib/libvorbis.a  C:/SFML/lib/libogg.a  C:/SFML/lib/libFLAC.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\cppProjectCA2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -148,14 +176,14 @@ build all: phony cppProjectCA2.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/SFML/lib/cmake/SFML/SFMLConfig.cmake C$:/SFML/lib/cmake/SFML/SFMLConfigDependencies.cmake C$:/SFML/lib/cmake/SFML/SFMLConfigVersion.cmake C$:/SFML/lib/cmake/SFML/SFMLStaticTargets-debug.cmake C$:/SFML/lib/cmake/SFML/SFMLStaticTargets-release.cmake C$:/SFML/lib/cmake/SFML/SFMLStaticTargets.cmake C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/SFML/lib/cmake/SFML/SFMLConfig.cmake C$:/SFML/lib/cmake/SFML/SFMLConfigDependencies.cmake C$:/SFML/lib/cmake/SFML/SFMLConfigVersion.cmake C$:/SFML/lib/cmake/SFML/SFMLStaticTargets-debug.cmake C$:/SFML/lib/cmake/SFML/SFMLStaticTargets-release.cmake C$:/SFML/lib/cmake/SFML/SFMLStaticTargets.cmake C$:/Users/Mooney/Desktop/ProjectsY2S2/cppca2/cppProjectCA2/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
 
 
 #############################################

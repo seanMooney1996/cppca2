@@ -58,7 +58,8 @@ int main() {
                 board->displayAllBugs();
                 break;
             case (7) : {
-                GUI game(*board);
+                auto *pb = new PlayerBug( 1000, 9, 5, Direction::North, 5);
+                GUI game(*board, *pb);
                 game.begin();
                 break;
             }

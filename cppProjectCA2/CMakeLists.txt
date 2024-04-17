@@ -16,6 +16,8 @@ add_executable(cppProjectCA2 main.cpp
         headers/Splitter.h
         source/GUI.cpp
         headers/GUI.h
+        source/PlayerBug.cpp
+        headers/PlayerBug.h
 )
 
 

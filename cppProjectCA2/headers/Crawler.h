@@ -9,12 +9,14 @@
 #include "Bug.h"
 
 class Crawler : public Bug {
+private:
+    string bugType = "Crawler";
 public:
     string getBugDetails() override;
     void displayBug() override;
     void move() override;
     Crawler(int id, int x, int y, Direction d, int size);
-
+    string getBugType() override;
 };
 
 

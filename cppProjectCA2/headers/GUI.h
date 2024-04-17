@@ -7,17 +7,20 @@
 #include <vector>
 #include "Bug.h"
 #include "Board.h"
+#include "PlayerBug.h"
 #include <SFML/Graphics.hpp>
 
 class GUI {
 
 private:
     Board& board;
+    PlayerBug& playerBug;
 
 public:
-    GUI(Board &board);
+    GUI(Board &board, Bug &pb);
     void begin();
-    static void draw(sf::RenderWindow &window,const Bug& bug);
+    static void draw(sf::RenderWindow &window, Bug& bug);
+    bool checkForGameFinish();
 };
 
 

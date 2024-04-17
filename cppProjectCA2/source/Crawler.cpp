@@ -63,3 +63,6 @@ string Crawler::getBugDetails() {
 void Crawler::displayBug() {
     cout<<getBugDetails()<<endl;
 }
+string Crawler::getBugType(){
+    return this->bugType;
+}

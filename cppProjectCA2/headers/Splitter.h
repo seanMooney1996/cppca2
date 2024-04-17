@@ -15,12 +15,14 @@ protected:
     int splitFrequency;
     int travelDistance = 0;
     Board *board;
+    string bugType = "Splitter";
 public:
     string getBugDetails() override;
     void displayBug() override;
     void move() override;
     void split();
     Splitter(int id, int x, int y, Direction d, int size, int splitFreq,Board *board);
+    string  getBugType() override;
 };
 
 

@@ -14,9 +14,10 @@ public:
     string getBugDetails() override;
     void move() override;
     void displayBug() override;
-
+     string getBugType() override;
 private:
     int hopLength;
+    string bugType = "Hopper";
 };
 
 

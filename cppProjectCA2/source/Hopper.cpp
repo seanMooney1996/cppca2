@@ -80,3 +80,7 @@ string Hopper::getBugDetails() {
 
     return bugDetails;
 }
+
+string Hopper::getBugType() {
+    return this->bugType;
+}

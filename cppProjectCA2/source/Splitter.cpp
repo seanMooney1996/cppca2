@@ -119,3 +119,7 @@ Splitter::Splitter(int id, int x, int y, Direction d, int size, int splitFreq, B
     this->alive = true;
     this->board = board;
 }
+
+string Splitter::getBugType() {
+   return this->bugType;
+}
