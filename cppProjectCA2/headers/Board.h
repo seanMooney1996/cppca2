@@ -40,6 +40,7 @@ public:
     void runSimulation();
     void displayAllBugs();
     void addNewBugToBoard(Bug *bug);
+    vector<Bug*>& getBugsVec();
 };
 
 

@@ -1,7 +1,7 @@
 CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj: \
- C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Hopper.cpp \
- C:/Users/seanm/Desktop/Y2PROJECTS/cppca2/cppProjectCA2/cppProjectCA2/headers/Hopper.h \
- C:/Users/seanm/Desktop/Y2PROJECTS/cppca2/cppProjectCA2/cppProjectCA2/headers/Bug.h \
+ C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Hopper.cpp \
+ C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/headers/Hopper.h \
+ C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/headers/Bug.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -57,7 +57,7 @@ CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
- C:/Users/seanm/Desktop/Y2PROJECTS/cppca2/cppProjectCA2/cppProjectCA2/headers/Direction.h \
+ C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/headers/Direction.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \

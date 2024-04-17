@@ -1,5 +1,5 @@
 CMakeFiles/cppProjectCA2.dir/main.cpp.obj: \
- C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\main.cpp \
+ C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\main.cpp \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -142,33 +142,28 @@ CMakeFiles/cppProjectCA2.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
- C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\headers/Bug.h \
+ C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\headers/Bug.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
- C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\headers/Direction.h \
- C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\headers/Crawler.h \
- C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\headers/Bug.h \
- C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\headers/Hopper.h \
- C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\headers/Board.h \
+ C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\headers/Direction.h \
+ C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\headers/Crawler.h \
+ C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\headers/Bug.h \
+ C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\headers/Hopper.h \
+ C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\headers/Board.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
- C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\headers/Splitter.h \
- C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\headers/Board.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
- C:/SFML/include/SFML/Window.hpp C:/SFML/include/SFML/System.hpp \
- C:/SFML/include/SFML/Config.hpp C:/SFML/include/SFML/System/Clock.hpp \
+ C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\headers/Splitter.h \
+ C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\headers/Board.h \
+ C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\headers/GUI.h \
+ C:/SFML/include/SFML/Graphics.hpp C:/SFML/include/SFML/Window.hpp \
+ C:/SFML/include/SFML/System.hpp C:/SFML/include/SFML/Config.hpp \
+ C:/SFML/include/SFML/System/Clock.hpp \
  C:/SFML/include/SFML/System/Export.hpp \
  C:/SFML/include/SFML/System/Time.hpp C:/SFML/include/SFML/System/Err.hpp \
  C:/SFML/include/SFML/System/FileInputStream.hpp \
@@ -193,6 +188,7 @@ CMakeFiles/cppProjectCA2.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
  C:/SFML/include/SFML/System/Utf.inl \
@@ -227,4 +223,46 @@ CMakeFiles/cppProjectCA2.dir/main.cpp.obj: \
  C:/SFML/include/SFML/Window/WindowHandle.hpp \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
- C:/SFML/include/SFML/Window/WindowStyle.hpp
+ C:/SFML/include/SFML/Window/WindowStyle.hpp \
+ C:/SFML/include/SFML/Graphics/BlendMode.hpp \
+ C:/SFML/include/SFML/Graphics/Export.hpp \
+ C:/SFML/include/SFML/Graphics/CircleShape.hpp \
+ C:/SFML/include/SFML/Graphics/Shape.hpp \
+ C:/SFML/include/SFML/Graphics/Drawable.hpp \
+ C:/SFML/include/SFML/Graphics/RenderStates.hpp \
+ C:/SFML/include/SFML/Graphics/Transform.hpp \
+ C:/SFML/include/SFML/Graphics/Rect.hpp \
+ C:/SFML/include/SFML/Graphics/Rect.inl \
+ C:/SFML/include/SFML/Graphics/Transformable.hpp \
+ C:/SFML/include/SFML/Graphics/VertexArray.hpp \
+ C:/SFML/include/SFML/Graphics/Vertex.hpp \
+ C:/SFML/include/SFML/Graphics/Color.hpp \
+ C:/SFML/include/SFML/Graphics/PrimitiveType.hpp \
+ C:/SFML/include/SFML/Graphics/ConvexShape.hpp \
+ C:/SFML/include/SFML/Graphics/Font.hpp \
+ C:/SFML/include/SFML/Graphics/Glyph.hpp \
+ C:/SFML/include/SFML/Graphics/Texture.hpp \
+ C:/SFML/include/SFML/Graphics/Image.hpp \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
+ C:/SFML/include/SFML/Graphics/RectangleShape.hpp \
+ C:/SFML/include/SFML/Graphics/RenderTarget.hpp \
+ C:/SFML/include/SFML/Graphics/View.hpp \
+ C:/SFML/include/SFML/Graphics/RenderTexture.hpp \
+ C:/SFML/include/SFML/Graphics/RenderWindow.hpp \
+ C:/SFML/include/SFML/Graphics/Shader.hpp \
+ C:/SFML/include/SFML/Graphics/Glsl.hpp \
+ C:/SFML/include/SFML/Graphics/Glsl.inl \
+ C:/SFML/include/SFML/Graphics/Sprite.hpp \
+ C:/SFML/include/SFML/Graphics/Text.hpp \
+ C:/SFML/include/SFML/Graphics/VertexBuffer.hpp \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc

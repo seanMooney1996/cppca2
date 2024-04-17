@@ -7,6 +7,8 @@
 #include <fstream>
 #include <random>
 #include <thread>
+#include <chrono>
+
 
 using namespace std;
 
@@ -184,6 +186,10 @@ void Board::displayAllBugs() {
 
 void Board::addNewBugToBoard(Bug *bug) {
         bugsVector.push_back(bug);
+}
+
+vector<Bug*> &Board::getBugsVec() {
+    return bugsVector;
 }
 
 

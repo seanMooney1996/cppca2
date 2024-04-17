@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2
+CMAKE_SOURCE_DIR = C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cppProjectCA2.dir/depend.make
@@ -70,93 +70,108 @@ include CMakeFiles/cppProjectCA2.dir/flags.make
 
 CMakeFiles/cppProjectCA2.dir/main.cpp.obj: CMakeFiles/cppProjectCA2.dir/flags.make
 CMakeFiles/cppProjectCA2.dir/main.cpp.obj: CMakeFiles/cppProjectCA2.dir/includes_CXX.rsp
-CMakeFiles/cppProjectCA2.dir/main.cpp.obj: C:/Users/seanm/Desktop/Y2PROJECTS/cppca2/cppProjectCA2/cppProjectCA2/main.cpp
+CMakeFiles/cppProjectCA2.dir/main.cpp.obj: C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/main.cpp
 CMakeFiles/cppProjectCA2.dir/main.cpp.obj: CMakeFiles/cppProjectCA2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cppProjectCA2.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppProjectCA2.dir/main.cpp.obj -MF CMakeFiles\cppProjectCA2.dir\main.cpp.obj.d -o CMakeFiles\cppProjectCA2.dir\main.cpp.obj -c C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cppProjectCA2.dir/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppProjectCA2.dir/main.cpp.obj -MF CMakeFiles\cppProjectCA2.dir\main.cpp.obj.d -o CMakeFiles\cppProjectCA2.dir\main.cpp.obj -c C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\main.cpp
 
 CMakeFiles/cppProjectCA2.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cppProjectCA2.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\main.cpp > CMakeFiles\cppProjectCA2.dir\main.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\main.cpp > CMakeFiles\cppProjectCA2.dir\main.cpp.i
 
 CMakeFiles/cppProjectCA2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cppProjectCA2.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\main.cpp -o CMakeFiles\cppProjectCA2.dir\main.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\main.cpp -o CMakeFiles\cppProjectCA2.dir\main.cpp.s
 
 CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj: CMakeFiles/cppProjectCA2.dir/flags.make
 CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj: CMakeFiles/cppProjectCA2.dir/includes_CXX.rsp
-CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj: C:/Users/seanm/Desktop/Y2PROJECTS/cppca2/cppProjectCA2/cppProjectCA2/source/Bug.cpp
+CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj: C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/source/Bug.cpp
 CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj: CMakeFiles/cppProjectCA2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj -MF CMakeFiles\cppProjectCA2.dir\source\Bug.cpp.obj.d -o CMakeFiles\cppProjectCA2.dir\source\Bug.cpp.obj -c C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Bug.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj -MF CMakeFiles\cppProjectCA2.dir\source\Bug.cpp.obj.d -o CMakeFiles\cppProjectCA2.dir\source\Bug.cpp.obj -c C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Bug.cpp
 
 CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Bug.cpp > CMakeFiles\cppProjectCA2.dir\source\Bug.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Bug.cpp > CMakeFiles\cppProjectCA2.dir\source\Bug.cpp.i
 
 CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Bug.cpp -o CMakeFiles\cppProjectCA2.dir\source\Bug.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Bug.cpp -o CMakeFiles\cppProjectCA2.dir\source\Bug.cpp.s
 
 CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj: CMakeFiles/cppProjectCA2.dir/flags.make
 CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj: CMakeFiles/cppProjectCA2.dir/includes_CXX.rsp
-CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj: C:/Users/seanm/Desktop/Y2PROJECTS/cppca2/cppProjectCA2/cppProjectCA2/source/Crawler.cpp
+CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj: C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/source/Crawler.cpp
 CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj: CMakeFiles/cppProjectCA2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj -MF CMakeFiles\cppProjectCA2.dir\source\Crawler.cpp.obj.d -o CMakeFiles\cppProjectCA2.dir\source\Crawler.cpp.obj -c C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Crawler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj -MF CMakeFiles\cppProjectCA2.dir\source\Crawler.cpp.obj.d -o CMakeFiles\cppProjectCA2.dir\source\Crawler.cpp.obj -c C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Crawler.cpp
 
 CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Crawler.cpp > CMakeFiles\cppProjectCA2.dir\source\Crawler.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Crawler.cpp > CMakeFiles\cppProjectCA2.dir\source\Crawler.cpp.i
 
 CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Crawler.cpp -o CMakeFiles\cppProjectCA2.dir\source\Crawler.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Crawler.cpp -o CMakeFiles\cppProjectCA2.dir\source\Crawler.cpp.s
 
 CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj: CMakeFiles/cppProjectCA2.dir/flags.make
 CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj: CMakeFiles/cppProjectCA2.dir/includes_CXX.rsp
-CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj: C:/Users/seanm/Desktop/Y2PROJECTS/cppca2/cppProjectCA2/cppProjectCA2/source/Hopper.cpp
+CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj: C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/source/Hopper.cpp
 CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj: CMakeFiles/cppProjectCA2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj -MF CMakeFiles\cppProjectCA2.dir\source\Hopper.cpp.obj.d -o CMakeFiles\cppProjectCA2.dir\source\Hopper.cpp.obj -c C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Hopper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj -MF CMakeFiles\cppProjectCA2.dir\source\Hopper.cpp.obj.d -o CMakeFiles\cppProjectCA2.dir\source\Hopper.cpp.obj -c C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Hopper.cpp
 
 CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Hopper.cpp > CMakeFiles\cppProjectCA2.dir\source\Hopper.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Hopper.cpp > CMakeFiles\cppProjectCA2.dir\source\Hopper.cpp.i
 
 CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Hopper.cpp -o CMakeFiles\cppProjectCA2.dir\source\Hopper.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Hopper.cpp -o CMakeFiles\cppProjectCA2.dir\source\Hopper.cpp.s
 
 CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj: CMakeFiles/cppProjectCA2.dir/flags.make
 CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj: CMakeFiles/cppProjectCA2.dir/includes_CXX.rsp
-CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj: C:/Users/seanm/Desktop/Y2PROJECTS/cppca2/cppProjectCA2/cppProjectCA2/source/Board.cpp
+CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj: C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/source/Board.cpp
 CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj: CMakeFiles/cppProjectCA2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj -MF CMakeFiles\cppProjectCA2.dir\source\Board.cpp.obj.d -o CMakeFiles\cppProjectCA2.dir\source\Board.cpp.obj -c C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj -MF CMakeFiles\cppProjectCA2.dir\source\Board.cpp.obj.d -o CMakeFiles\cppProjectCA2.dir\source\Board.cpp.obj -c C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Board.cpp
 
 CMakeFiles/cppProjectCA2.dir/source/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cppProjectCA2.dir/source/Board.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Board.cpp > CMakeFiles\cppProjectCA2.dir\source\Board.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Board.cpp > CMakeFiles\cppProjectCA2.dir\source\Board.cpp.i
 
 CMakeFiles/cppProjectCA2.dir/source/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cppProjectCA2.dir/source/Board.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Board.cpp -o CMakeFiles\cppProjectCA2.dir\source\Board.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Board.cpp -o CMakeFiles\cppProjectCA2.dir\source\Board.cpp.s
 
 CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj: CMakeFiles/cppProjectCA2.dir/flags.make
 CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj: CMakeFiles/cppProjectCA2.dir/includes_CXX.rsp
-CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj: C:/Users/seanm/Desktop/Y2PROJECTS/cppca2/cppProjectCA2/cppProjectCA2/source/Splitter.cpp
+CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj: C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/source/Splitter.cpp
 CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj: CMakeFiles/cppProjectCA2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj -MF CMakeFiles\cppProjectCA2.dir\source\Splitter.cpp.obj.d -o CMakeFiles\cppProjectCA2.dir\source\Splitter.cpp.obj -c C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Splitter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj -MF CMakeFiles\cppProjectCA2.dir\source\Splitter.cpp.obj.d -o CMakeFiles\cppProjectCA2.dir\source\Splitter.cpp.obj -c C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Splitter.cpp
 
 CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Splitter.cpp > CMakeFiles\cppProjectCA2.dir\source\Splitter.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Splitter.cpp > CMakeFiles\cppProjectCA2.dir\source\Splitter.cpp.i
 
 CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\source\Splitter.cpp -o CMakeFiles\cppProjectCA2.dir\source\Splitter.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\Splitter.cpp -o CMakeFiles\cppProjectCA2.dir\source\Splitter.cpp.s
+
+CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj: CMakeFiles/cppProjectCA2.dir/flags.make
+CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj: CMakeFiles/cppProjectCA2.dir/includes_CXX.rsp
+CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj: C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/source/GUI.cpp
+CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj: CMakeFiles/cppProjectCA2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj -MF CMakeFiles\cppProjectCA2.dir\source\GUI.cpp.obj.d -o CMakeFiles\cppProjectCA2.dir\source\GUI.cpp.obj -c C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\GUI.cpp
+
+CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\GUI.cpp > CMakeFiles\cppProjectCA2.dir\source\GUI.cpp.i
+
+CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\source\GUI.cpp -o CMakeFiles\cppProjectCA2.dir\source\GUI.cpp.s
 
 # Object files for target cppProjectCA2
 cppProjectCA2_OBJECTS = \
@@ -165,7 +180,8 @@ cppProjectCA2_OBJECTS = \
 "CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj" \
 "CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj" \
 "CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj" \
-"CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj"
+"CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj" \
+"CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj"
 
 # External object files for target cppProjectCA2
 cppProjectCA2_EXTERNAL_OBJECTS =
@@ -176,25 +192,25 @@ cppProjectCA2.exe: CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj
 cppProjectCA2.exe: CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj
 cppProjectCA2.exe: CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj
 cppProjectCA2.exe: CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj
+cppProjectCA2.exe: CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj
 cppProjectCA2.exe: CMakeFiles/cppProjectCA2.dir/build.make
 cppProjectCA2.exe: C:/SFML/lib/libsfml-system-s-d.a
 cppProjectCA2.exe: C:/SFML/lib/libsfml-window-s-d.a
 cppProjectCA2.exe: C:/SFML/lib/libsfml-graphics-s-d.a
 cppProjectCA2.exe: C:/SFML/lib/libsfml-audio-s-d.a
-cppProjectCA2.exe: C:/SFML/lib/libsfml-network-s-d.a
 cppProjectCA2.exe: C:/SFML/lib/libsfml-window-s-d.a
 cppProjectCA2.exe: C:/SFML/lib/libfreetype.a
+cppProjectCA2.exe: C:/SFML/lib/libsfml-system-s-d.a
 cppProjectCA2.exe: C:/SFML/lib/libopenal32.a
 cppProjectCA2.exe: C:/SFML/lib/libvorbisfile.a
 cppProjectCA2.exe: C:/SFML/lib/libvorbisenc.a
 cppProjectCA2.exe: C:/SFML/lib/libvorbis.a
 cppProjectCA2.exe: C:/SFML/lib/libogg.a
 cppProjectCA2.exe: C:/SFML/lib/libFLAC.a
-cppProjectCA2.exe: C:/SFML/lib/libsfml-system-s-d.a
 cppProjectCA2.exe: CMakeFiles/cppProjectCA2.dir/linkLibs.rsp
 cppProjectCA2.exe: CMakeFiles/cppProjectCA2.dir/objects1.rsp
 cppProjectCA2.exe: CMakeFiles/cppProjectCA2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable cppProjectCA2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable cppProjectCA2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cppProjectCA2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -206,6 +222,6 @@ CMakeFiles/cppProjectCA2.dir/clean:
 .PHONY : CMakeFiles/cppProjectCA2.dir/clean
 
 CMakeFiles/cppProjectCA2.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2 C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2 C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug\CMakeFiles\cppProjectCA2.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2 C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2 C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug\CMakeFiles\cppProjectCA2.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/cppProjectCA2.dir/depend
 

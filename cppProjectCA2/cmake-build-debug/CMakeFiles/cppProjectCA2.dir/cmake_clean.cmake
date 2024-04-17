@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj.d"
   "CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj"
   "CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj.d"
+  "CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj"
+  "CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj.d"
   "CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj"
   "CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj.d"
   "CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj"

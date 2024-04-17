@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2
+CMAKE_SOURCE_DIR = C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug\CMakeFiles C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug\CMakeFiles C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\seanm\Desktop\Y2PROJECTS\cppca2\cppProjectCA2\cppProjectCA2\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\seanm\Desktop\Y2PROJECTS\cppca2NEW\cppProjectCA2\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -224,6 +224,30 @@ source/Crawler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cppProjectCA2.dir\build.make CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.s
 .PHONY : source/Crawler.cpp.s
 
+source/GUI.obj: source/GUI.cpp.obj
+.PHONY : source/GUI.obj
+
+# target to build an object file
+source/GUI.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cppProjectCA2.dir\build.make CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj
+.PHONY : source/GUI.cpp.obj
+
+source/GUI.i: source/GUI.cpp.i
+.PHONY : source/GUI.i
+
+# target to preprocess a source file
+source/GUI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cppProjectCA2.dir\build.make CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.i
+.PHONY : source/GUI.cpp.i
+
+source/GUI.s: source/GUI.cpp.s
+.PHONY : source/GUI.s
+
+# target to generate assembly for a file
+source/GUI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cppProjectCA2.dir\build.make CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.s
+.PHONY : source/GUI.cpp.s
+
 source/Hopper.obj: source/Hopper.cpp.obj
 .PHONY : source/Hopper.obj
 
@@ -293,6 +317,9 @@ help:
 	@echo ... source/Crawler.obj
 	@echo ... source/Crawler.i
 	@echo ... source/Crawler.s
+	@echo ... source/GUI.obj
+	@echo ... source/GUI.i
+	@echo ... source/GUI.s
 	@echo ... source/Hopper.obj
 	@echo ... source/Hopper.i
 	@echo ... source/Hopper.s

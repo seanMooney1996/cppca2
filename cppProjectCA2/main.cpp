@@ -4,10 +4,10 @@
 #include "headers/Hopper.h"
 #include "headers/Board.h"
 #include "headers/Splitter.h"
+#include "headers/GUI.h"
 #include <vector>
 #include <fstream>
 #include <sstream>
-#include <SFML/Window.hpp>
 
 using namespace std;
 
@@ -16,26 +16,10 @@ void readBugsFromFile(vector<Bug *> &bug_vector, const string &file_name, Board 
 void findBugById(const vector<Bug *> &bugVec, int size);
 
 int main() {
-//    sf::Window window(sf::VideoMode(1000, 900), "My window");
-//    window.setSize(sf::Vector2u(1000, 900));
-//    window.setTitle("BUG GAME");
-//    window.setVerticalSyncEnabled(true);
-//    while (window.isOpen())
-//    {
-//        // check all the window's events that were triggered since the last iteration of the loop
-//        sf::Event event;
-//        while (window.pollEvent(event))
-//        {
-//            // "close requested" event: we close the window
-//            if (event.type == sf::Event::Closed)
-//                window.close();
-//        }
-//    }
     vector<Bug *> bug_vector;
     auto *board = new Board();
     readBugsFromFile(bug_vector, "bugs.txt",board);
     board->initializeBoard(bug_vector);
-
     board->displayAllBugs();
     int input = 0;
     while (input != -1) {
@@ -45,6 +29,8 @@ int main() {
         cout << "Enter 3 to display all bug history" << endl;
         cout << "Enter 4 to display all cells" << endl;
         cout << "Enter 5 run simulation" << endl;
+        cout << "Enter 6 run display all bugs" << endl;
+        cout << "Enter 7 run game mode" << endl;
         cin >> input;
 
         switch (input) {
@@ -71,6 +57,11 @@ int main() {
             case (6) :
                 board->displayAllBugs();
                 break;
+            case (7) : {
+                GUI game(*board);
+                game.begin();
+                break;
+            }
             default :
                 cout << " Enter a valid number " << endl;
         }
