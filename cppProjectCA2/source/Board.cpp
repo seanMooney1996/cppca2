@@ -8,6 +8,7 @@
 #include <random>
 #include <thread>
 #include <chrono>
+#include <map>
 
 
 using namespace std;
@@ -67,47 +68,79 @@ void Board::getBugPositions() {
             boardVector[i][j] = nullptr;
         }
     }
-    auto iter = bugsVector.begin();
-    for (int i = 0; i < bugsVector.size(); i++) {
-        Bug *b = *iter;
 
-        // eat functionality for board
-        if (b->isAlive()) {
-            Pair bugPos = b->getPosition();
-            Bug *ptrToOtherBug = boardVector[bugPos.getX()][bugPos.getY()];
-            if (ptrToOtherBug== nullptr){
-                boardVector[bugPos.getX()][bugPos.getY()] = b;
+    map<Pair, std::vector<Bug*>*> positionsUsedMap;
+
+
+    for (auto bug : bugsVector) {
+
+        if (bug->isAlive()) {
+            Pair positionOfBug = bug->getPosition();
+            auto it = positionsUsedMap.find(positionOfBug);
+            if (it == positionsUsedMap.end()) {
+                auto *bugsInCell = new std::vector<Bug *>;
+                bugsInCell->push_back(bug);
+                positionsUsedMap.insert({positionOfBug, bugsInCell});
             } else {
-                if (ptrToOtherBug->getSize()>b->getSize()){
-                    ptrToOtherBug->eatBug(b);
-                } else if (ptrToOtherBug->getSize()<b->getSize()){
-                    b->eatBug(ptrToOtherBug);
-                    boardVector[bugPos.getX()][bugPos.getY()] = b;
-                } else {
-                    std::random_device rd;
-                    std::mt19937 gen(rd());
-                    int min = 1;
-                    int max = 2;
-                    std::uniform_int_distribution<> dist(min, max);
-                    int randomInt = dist(gen);
-                    if (randomInt == 1){
-                        ptrToOtherBug->eatBug(b);
-                    } else {
-                        b->eatBug(ptrToOtherBug);
-                        boardVector[bugPos.getX()][bugPos.getY()] = b;
+                it->second->push_back(bug);
+            }
+        }
+    }
+
+
+    for (auto& entry : positionsUsedMap) {
+
+        cout<< "position:   " << entry.first.getX() << "," << entry.first.getY() << endl;
+
+        for (int i = 0; i < entry.second->size(); i++) {
+                cout<<"  Bug :"<< entry.second->at(i)->getId() << " "<< entry.second->at(i)->getBugType()<<endl;
+        }
+        if (entry.second->size() >= 2) {
+            int biggestBugSize = 0;
+            int indexOfBiggest = -1;
+
+            for (int i = 0; i < entry.second->size(); i++) {
+                Bug* bug = entry.second->at(i);
+                if (biggestBugSize < bug->getSize()) {
+                    biggestBugSize = bug->getSize();
+                    indexOfBiggest = static_cast<int>(i);
+                }
+            }
+
+            if (indexOfBiggest != -1) {
+                Bug* biggestBugInCell = entry.second->at(indexOfBiggest);
+                for (size_t i = 0; i < entry.second->size(); i++) {
+                    if (i !=indexOfBiggest) {
+                        biggestBugInCell->eatBug(entry.second->at(i));
                     }
                 }
             }
         }
-        iter++;
     }
+
+    // Update board
+    for (auto bug : bugsVector) {
+        Pair bugPos = bug->getPosition();
+        if (bug->isAlive()) {
+            boardVector[bugPos.getX()][bugPos.getY()] = bug;
+        }
+    }
+
+    for (auto& entry : positionsUsedMap) {
+        delete entry.second;
+    }
+    positionsUsedMap.clear();
+
     printBoard();
 }
 
 void Board::moveAllBugs() {
     for (int i = 0; i < bugsVector.size(); i++) {
-        cout<< endl;
-        bugsVector[i]->move();
+
+        if (bugsVector.at(i)->isAlive()) {
+            cout << endl;
+            bugsVector[i]->move();
+        }
     }
 }
 
@@ -117,13 +150,9 @@ void Board::printBoard() {
             cout << "| ";
             if (this->boardVector[i][j] != nullptr) {
                 Bug *b = this->boardVector[i][j];
-                if (b->getSize()<10){
-                    cout <<" "<<b->getSize();
-                } else {
-                    cout << b->getSize();
-                }
+                cout<<b->getId();
             } else {
-                cout << "  ";
+                cout << "   ";
             }
             cout << " |";
             if (j == 9) {

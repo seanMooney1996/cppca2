@@ -3,6 +3,8 @@
 //
 
 #include <SFML/Graphics.hpp>
+#include <iostream>
+#include <thread>
 #include "../headers/GUI.h"
 #include "../headers/PlayerBug.h"
 
@@ -33,7 +35,8 @@ void GUI::draw(sf::RenderWindow &window,  Bug &bug) {
 }
 
 void GUI::begin() {
-    sf::RenderWindow window(sf::VideoMode(1000, 1000), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(1000, 1000), "Bug Game!");
+    window.requestFocus();
     vector<sf::RectangleShape> boardGui;
 
     board.addNewBugToBoard(&playerBug);
@@ -90,7 +93,6 @@ void GUI::begin() {
         }
 
         gameFinished = checkForGameFinish();
-
         window.clear(sf::Color::White);
         for (sf::RectangleShape &rect: boardGui) {
             window.draw(rect);
@@ -100,15 +102,28 @@ void GUI::begin() {
                 draw(window, *b);
             }
         }
+
         window.display();
+
+        if (!playerBug.isAlive()){
+            cout << "You lost!!!"<< endl;
+            std::this_thread::sleep_for(5000ms);
+            window.close();
+        }
+
+        if (gameFinished && playerBug.isAlive()){
+            std::this_thread::sleep_for(5000ms);
+            cout<<"You won" << endl;
+            window.close();
+        }
     }
 
 }
 
 bool GUI::checkForGameFinish() {
     int aliveCount = 0;
-    for (int i=0;i<board.getBugsVec().size();i++){
-        if (board.getBugsVec().at(i)->isAlive()){
+    for (auto & i : board.getBugsVec()){
+        if (i->isAlive()){
             aliveCount++;
         }
     }

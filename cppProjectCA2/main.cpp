@@ -61,6 +61,10 @@ int main() {
                 auto *pb = new PlayerBug( 1000, 9, 5, Direction::North, 5);
                 GUI game(*board, *pb);
                 game.begin();
+
+                // reinstate board when game finishes
+                readBugsFromFile(bug_vector, "bugs.txt",board);
+                board->initializeBoard(bug_vector);
                 break;
             }
             default :

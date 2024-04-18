@@ -27,6 +27,22 @@ struct Pair {
         x = newx;
         y = newy;
     }
+
+    bool operator==( const Pair& a) const {
+        if(a.x==x && a.y== y)
+            return true;
+        else
+            return false;
+    }
+
+    bool operator<(const Pair& a) const {
+        if (x < a.x)
+            return true;
+        else if (x == a.x)
+            return y < a.y;
+        else
+            return false;
+    }
 };
 
 using namespace std;
