@@ -9,6 +9,7 @@
 #include <thread>
 #include <chrono>
 #include <map>
+#include <time.h>
 
 
 using namespace std;
@@ -89,9 +90,7 @@ void Board::getBugPositions() {
 
 
     for (auto& entry : positionsUsedMap) {
-
         cout<< "position:   " << entry.first.getX() << "," << entry.first.getY() << endl;
-
         for (int i = 0; i < entry.second->size(); i++) {
                 cout<<"  Bug :"<< entry.second->at(i)->getId() << " "<< entry.second->at(i)->getBugType()<<endl;
         }
@@ -104,6 +103,15 @@ void Board::getBugPositions() {
                 if (biggestBugSize < bug->getSize()) {
                     biggestBugSize = bug->getSize();
                     indexOfBiggest = static_cast<int>(i);
+
+                    // if bugs are equal in size, only half the time will it select another bug to be the biggest.
+                } else if (biggestBugSize == bug->getSize()) {
+                    srand(time(0));
+                    int randomInt = rand()%2;
+
+                    if (randomInt == 1 ){
+                        indexOfBiggest = static_cast<int>(i);
+                    }
                 }
             }
 

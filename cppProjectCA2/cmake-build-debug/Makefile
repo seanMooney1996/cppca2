@@ -272,6 +272,30 @@ source/Hopper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cppProjectCA2.dir\build.make CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.s
 .PHONY : source/Hopper.cpp.s
 
+source/PlayerBug.obj: source/PlayerBug.cpp.obj
+.PHONY : source/PlayerBug.obj
+
+# target to build an object file
+source/PlayerBug.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cppProjectCA2.dir\build.make CMakeFiles/cppProjectCA2.dir/source/PlayerBug.cpp.obj
+.PHONY : source/PlayerBug.cpp.obj
+
+source/PlayerBug.i: source/PlayerBug.cpp.i
+.PHONY : source/PlayerBug.i
+
+# target to preprocess a source file
+source/PlayerBug.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cppProjectCA2.dir\build.make CMakeFiles/cppProjectCA2.dir/source/PlayerBug.cpp.i
+.PHONY : source/PlayerBug.cpp.i
+
+source/PlayerBug.s: source/PlayerBug.cpp.s
+.PHONY : source/PlayerBug.s
+
+# target to generate assembly for a file
+source/PlayerBug.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cppProjectCA2.dir\build.make CMakeFiles/cppProjectCA2.dir/source/PlayerBug.cpp.s
+.PHONY : source/PlayerBug.cpp.s
+
 source/Splitter.obj: source/Splitter.cpp.obj
 .PHONY : source/Splitter.obj
 
@@ -323,6 +347,9 @@ help:
 	@echo ... source/Hopper.obj
 	@echo ... source/Hopper.i
 	@echo ... source/Hopper.s
+	@echo ... source/PlayerBug.obj
+	@echo ... source/PlayerBug.i
+	@echo ... source/PlayerBug.s
 	@echo ... source/Splitter.obj
 	@echo ... source/Splitter.i
 	@echo ... source/Splitter.s

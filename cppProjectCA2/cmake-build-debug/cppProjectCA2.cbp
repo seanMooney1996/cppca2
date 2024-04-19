@@ -104,6 +104,9 @@
 		<Unit filename="C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/headers/Hopper.h">
 			<Option target="cppProjectCA2"/>
 		</Unit>
+		<Unit filename="C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/headers/PlayerBug.h">
+			<Option target="cppProjectCA2"/>
+		</Unit>
 		<Unit filename="C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/headers/Splitter.h">
 			<Option target="cppProjectCA2"/>
 		</Unit>
@@ -123,6 +126,9 @@
 			<Option target="cppProjectCA2"/>
 		</Unit>
 		<Unit filename="C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/source/Hopper.cpp">
+			<Option target="cppProjectCA2"/>
+		</Unit>
+		<Unit filename="C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/source/PlayerBug.cpp">
 			<Option target="cppProjectCA2"/>
 		</Unit>
 		<Unit filename="C:/Users/seanm/Desktop/Y2PROJECTS/cppca2NEW/cppProjectCA2/source/Splitter.cpp">
