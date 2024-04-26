@@ -1,0 +1,22 @@
+# ninja log v5
+25	600	7358334886847414	CMakeFiles/cppProjectCA2.dir/source/PlayerBug.cpp.obj	424c7d9d2b9077
+5	1344	7358334894257595	CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj	30d792c45805e4d5
+1	1357	7358334894337382	CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj	f1f438785e467638
+604	1433	7358334895195088	CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj	1a2a80340c31da87
+9	1545	7358334896302135	CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj	e0ac47edcc9bc16d
+14	1745	7358334898306763	CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj	17021ff1dba147df
+20	1785	7358334898685753	CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj	19c922801cf5b6fd
+1346	2270	7358334903572691	CMakeFiles/cppProjectCA2.dir/main.cpp.obj	55dc1e1a2544d2dc
+2270	3039	7358334911122499	cppProjectCA2.exe	3a6028fce6bf536f
+27	607	7358341044625772	CMakeFiles/cppProjectCA2.dir/source/PlayerBug.cpp.obj	424c7d9d2b9077
+4	1064	7358341049203540	CMakeFiles/cppProjectCA2.dir/source/Crawler.cpp.obj	30d792c45805e4d5
+8	1072	7358341049283322	CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj	f1f438785e467638
+608	1183	7358341050400335	CMakeFiles/cppProjectCA2.dir/source/Bug.cpp.obj	1a2a80340c31da87
+12	1227	7358341050849133	CMakeFiles/cppProjectCA2.dir/source/Splitter.cpp.obj	e0ac47edcc9bc16d
+16	1410	7358341052674251	CMakeFiles/cppProjectCA2.dir/source/GUI.cpp.obj	17021ff1dba147df
+20	1430	7358341052883691	CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj	19c922801cf5b6fd
+1064	1931	7358341057900280	CMakeFiles/cppProjectCA2.dir/main.cpp.obj	55dc1e1a2544d2dc
+1932	2541	7358341063824439	cppProjectCA2.exe	3a6028fce6bf536f
+7	750	7358345547258426	CMakeFiles/cppProjectCA2.dir/source/Hopper.cpp.obj	f1f438785e467638
+16	1033	7358345550080880	CMakeFiles/cppProjectCA2.dir/source/Board.cpp.obj	19c922801cf5b6fd
+1033	1671	7358345556314208	cppProjectCA2.exe	3a6028fce6bf536f
